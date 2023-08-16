@@ -63,8 +63,4 @@ const questions = [
       }
     }
   }
-  function addScore(){
-    for(i=0;i<radios.length;i++){
-      if()
-    }
-  }
+  
