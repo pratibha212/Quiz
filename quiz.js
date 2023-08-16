@@ -24,10 +24,13 @@ const questions = [
       options: [8, 16,4,44],
     },
   ];
+
+  let score;
+  let add=[];
   let questionNumber = 1;
   ques.innerHTML=questions[0].q
   changeSelection(); 
-  checkRadio()
+  clearCheck()
 
   let Inter = setInterval(()=>{
   if( questionNumber === questions.length){
@@ -39,9 +42,9 @@ const questions = [
   ques.innerHTML=questions[questionNumber].q
   questionNumber++
   changeSelection()
-  checkRadio()
+  clearCheck()
   }
-  },1000)
+  },3000)
 
   function changeSelection (){
     for(i=0; i<questions.length; i++){
@@ -52,11 +55,16 @@ const questions = [
     }
 
   }
-  function checkRadio(){
+  function clearCheck(){
     // if(radios===checked)radios=false
     for(i=0;i<radios.length;i++){
       if(radios[i].checked===true){
         radios[i].checked=false;
       }
+    }
+  }
+  function addScore(){
+    for(i=0;i<radios.length;i++){
+      if()
     }
   }
